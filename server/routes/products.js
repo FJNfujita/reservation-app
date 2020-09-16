@@ -14,7 +14,7 @@ router.get('', function(req, res) {
 
     // サンプルデータそのまま出力
     const fakeDb = new FakeDb()
-    return res.json(fakeDb)
+    return res.json(fakeDb.products)
 })
 
 router.get('/:productId', function(req, res) {
