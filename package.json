@@ -2,9 +2,13 @@
   "name": "reservation-app",
   "version": "0.0.0",
   "license": "MIT",
+  "engines": {
+    "node": "12.16.1",
+    "npm": "6.13.4"
+  },
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "npm run start --prefix server",
     "start-dev": "ng serve --proxy-config proxy.conf.json",
     "build": "ng build --prod",
     "test": "ng test",
