@@ -19,7 +19,10 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "C:/Users/FJN20190412-1/Desktop/Angular練習/reservation-app/node_modules/bootstrap/dist/css/bootstrap.min.css",
+        "../node_modules/bootstrap/dist/css/bootstrap.min.css",
+        "assets/sass/paper-kit.scss",
+        "assets/css/demo.css",
+        "assets/css/nucleo-icons.css",
         "styles.css"
       ],
       "scripts": [],
