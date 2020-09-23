@@ -31,4 +31,4 @@ const routes: Routes = [
   ],
   bootstrap: []
 })
-export class productModule { }
+export class ProductModule { }
