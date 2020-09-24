@@ -22,7 +22,7 @@ router.get('/:productId', function(req, res) {
     // DBからデータ取得
     // Product.findById(productId, function(err, foundProduct){
     //     if(err) {
-    //          return res.status(422).send({errors: [{title: 'product error', detail: 'product not found'}]})
+    //          return res.status(422).send({errors: [{title: 'Product error', detail: 'Product not found'}]})
     //     }
     //     return res.json(foundProduct)
     // })
