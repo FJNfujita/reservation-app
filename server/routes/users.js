@@ -17,16 +17,17 @@ router.post('/login', function(req, res) {
         return res.status(422).send({errors: [{title: 'User error', detail: 'Please fill password'}]})
     }
 
-    if(!foundUser.hasSamePassword(password)) { // パスワードが一致しない
-        return res.status(422).send({errors: [{title: 'User error', detail: 'Incorrect password'}]})
-    }
+    // if(!foundUser.hasSamePassword(password)) { // パスワードが一致しない
+    //     return res.status(422).send({errors: [{title: 'User error', detail: 'Incorrect password'}]})
+    // }
 
-    const token = jwt.sign({
-        userid: foundUser.id,
-        username: foundUser.username
-      }, config.SECRET, { expiresIn: '1h' });
+    // const token = jwt.sign({
+    //     userid: foundUser.id,
+    //     username: foundUser.username
+    //   }, config.SECRET, { expiresIn: '1h' });
 
-    return res.json(token)
+    //return res.json(token)
+    return res.json({'resisterd':  true})
 })
 
 router.post('/register', function(req, res) {

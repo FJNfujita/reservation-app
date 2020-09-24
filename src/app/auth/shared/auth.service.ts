@@ -13,8 +13,12 @@ export class AuthService {
     //     return this.http.get('/api/v1/products')
     // }
 
-    // getProductById(productId: string) :Observable<any> {
-    //     return this.http.get('/api/v1/products/' + productId)
-    // }
+    register(userDate: any) :Observable<any> {
+        return this.http.post('/api/v1/users/register', userDate)
+    }
+
+    login(userDate: any) :Observable<any> {
+        return this.http.post('/api/v1/users/login', userDate)
+    }
 
 }
